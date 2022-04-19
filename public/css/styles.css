@@ -545,7 +545,15 @@ footer {
     margin-top: 2rem;
     font-size: 4vw;
 }
+.heading__hire-image-mobile {
+    width: 95vw;
+    margin-top: 6rem;
+}
 
+.heading__hire-image-mobile img {
+    width: 100%;
+    height: auto;
+}
 .heading__hire-image {
     min-width: 60%;
     display: none;
@@ -1005,6 +1013,9 @@ footer {
 
     .heading__hire-image {
         display: block;
+    }
+    .heading__hire-image-mobile {
+        display: none;
     }
 
 
