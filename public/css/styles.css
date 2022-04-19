@@ -1,0 +1,1574 @@
+:root {
+    --main-text-color: #000;
+    --secondary-text-color: #f99604;
+    --main-font: 'Poppins', sans-serif;
+    --roboto-font: 'Roboto', sans-serif;
+    --responsive-text: 1.2vw;
+}
+
+/**Generic Styles**/
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-family: var(--roboto-font);
+    font-size: 3.5vw;
+    background-image: linear-gradient(to right, #FFC444 0%, #f36f56 0%, #FB6FBB);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+    font-family: var(--roboto-font);
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+p {
+    font-family: var(--roboto-font);
+    line-height: 24pt;
+    text-shadow: 0px 0px .5px rgba(0, 0, 0, .5);
+}
+
+header {
+    position: relative;
+}
+
+button {
+    background-color: var(--secondary-text-color);
+    color: white;
+    align-self: center;
+    padding: .5rem 4rem;
+    font-size: 4.5vw;
+    font-family: var(--roboto-font);
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 80%;
+    height: 7vh;
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    margin: 0 2rem;
+}
+
+.container__mobile {
+    margin: 0 1rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 100vw;
+    background-color: white;
+    top: 5vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-family: var(--main-font);
+    padding: 0 1rem;
+}
+
+.hideMenu {
+    display: none;
+}
+
+.showMenu {
+    display: flex;
+    position: fixed;
+}
+
+.secondary__btn {
+    color: var(--secondary-text-color);
+    background-color: #FEF1DF;
+}
+
+.secondary__btn:hover {
+    background-color: var(--secondary-text-color);
+    color: white;
+
+}
+
+.next__button {
+    border: none;
+    background-color: var(--secondary-text-color);
+    color: white;
+    font-family: var(--roboto-font);
+    padding: .4rem 2.5rem;
+    font-size: 1.2vw;
+    float: right;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.itallic {
+    font-style: italic;
+}
+
+.my {
+    margin: 2rem 0;
+}
+
+.mx {
+    margin: 0 1rem;
+}
+
+.ml {
+    margin-left: 1rem;
+}
+
+.mt {
+    margin-top: 4rem;
+}
+
+.px {
+    padding: 0 1rem;
+}
+
+.center__text {
+    text-align: center;
+}
+
+.grandient__bar {
+    height: 31px;
+    border-radius: 5px;
+    margin-left: .5rem;
+}
+
+.orange__grandient {
+    background: linear-gradient(to right, #FFC444, #F36F56);
+}
+
+.pink__grandient {
+    background: linear-gradient(to right, #FFC444, #FB6FBB);
+}
+
+.purple__grandient {
+    background: linear-gradient(to right, #E38DDD, #9571F6);
+}
+
+.sized__text {
+    width: 80%;
+}
+
+body {
+    position: relative;
+}
+
+.d__none {
+    display: none;
+}
+
+.intro {
+    background-color: white;
+    z-index: 3;
+    position: absolute;
+    top: -150px;
+    height: calc(100vh + 150px);
+}
+
+/**End Generic Styles**/
+
+
+
+/**Navbar Styles**/
+.logo {
+    font-size: 27px !important;
+    font-family: var(--main-font);
+    font-weight: bold;
+    padding: 0;
+}
+
+.logo span {
+    color: #f99604;
+}
+
+
+/**Mobile Burguer With Animation**/
+.menu__icon {
+    min-width: 30px;
+}
+
+.menu__icon div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 1rem;
+    transition: 0.4s;
+
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background-color: #ff6962;
+
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+    background-color: #ff6962;
+}
+
+/**End Mobile Burguer With Animation**/
+
+
+.nav__desktop .row {
+    display: none;
+}
+
+.nav__desktop {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: calc(100vw - 2rem);
+    height: 7vh;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.nav__desktop a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-family: var(--main-font);
+    padding: 0 1rem;
+}
+
+.nav__desktop a:hover {
+
+    text-shadow: 0 0 1px black;
+    transition: .3s;
+}
+
+nav .row div:hover {
+    border-bottom: 1px solid var(--secondary-text-color);
+    text-align: center;
+    transition: .3s;
+}
+
+.sized__box {
+    width: 2rem;
+    border: none !important;
+}
+
+header nav .logo {
+    color: #000 !important;
+}
+
+.active {
+    text-shadow: 0 0 1px black;
+    border-bottom: 1px solid var(--secondary-text-color);
+    text-align: center;
+}
+
+/**End Navbar Styles**/
+
+
+/**HomePage Styles**/
+.heading {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    column-gap: 5rem;
+}
+
+.mobile__title {
+    font-size: 8vw;
+    text-align: center;
+}
+
+.heading__img {
+    min-width: 45%;
+    max-width: 80%;
+    margin: 2rem auto;
+}
+
+.heading__img video {
+    width: 100%;
+    height: auto;
+}
+
+.heading__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.heading__description h1 {
+    font-size: 4.5vw;
+    display: none;
+}
+
+.heading__description p {
+    width: 100%;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.heading__description p span {
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
+.heading__description .hire {
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.heading__description .work {
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.steps {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15vh !important;
+    overflow-x: scroll;
+}
+
+.step__card {
+    min-width: 80vw;
+}
+
+.step__card p {
+    font-size: 3.7vw;
+}
+
+.step__number {
+    width: 13vw;
+    height: 13vw;
+    background-color: var(--main-text-color);
+    color: white;
+    font-weight: bold;
+    font-family: var(--main-font);
+    border-radius: calc(100%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.step__number p {
+    margin: .5rem;
+    font-size: 25px !important;
+    align-self: center;
+}
+
+.step__number p span {
+    color: var(--secondary-text-color);
+}
+
+.step__card h3 {
+    font-size: 6vw;
+    font-family: var(--roboto-font);
+    font-weight: bold;
+    line-height: 1.19;
+    margin-left: 1rem;
+}
+
+.step__card p {
+    margin: 0 1rem;
+}
+
+.step__card ul li {
+    list-style-type: none;
+    margin: 0;
+    font-size: 3.5vw !important;
+    font-family: var(--roboto-font);
+    font-style: italic;
+    font-size: var(--responsive-text);
+    margin: 1rem 1rem 1rem 1rem;
+    line-height: 24pt;
+}
+
+.orange__text {
+    color: var(--secondary-text-color);
+}
+
+.pink__text li {
+    color: #e37fb1;
+}
+
+.purple__text li {
+    color: #bc7eeb;
+}
+
+.step__card ul li::before {
+    content: "- ";
+}
+
+footer {
+    background-color: #3D3D3D;
+    height: fit-content;
+    margin-top: 5rem;
+    padding: 3rem 0;
+}
+
+.logo__footer {
+    color: white;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    justify-content: space-between;
+}
+.redes{
+    display: flex;
+    gap: 1rem;
+    font-family: Roboto;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding-right: 13rem;
+    justify-content: center;
+    width: max-content;
+    padding: 0;
+    
+}
+
+.redes li{
+    padding: 2rem;
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    padding: 0;
+    justify-content: center;
+}
+
+.enlaces li{
+    padding: 1rem 2rem;
+    width: max-content;
+}
+
+.enlaces li a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--main-font);
+}
+.enlaces li a:hover{
+    color: var(--secondary-text-color);
+}
+
+.redes img{
+    width: 50px;
+    height: 50px;
+}
+
+.legal{
+    color: white;
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.logo__footer {
+    color: white;
+}
+
+/**End HomePage Styles**/
+
+
+/**Hire Styles**/
+.hire__heading {
+    align-items: flex-start;
+    margin: 0 2rem;
+}
+
+.hire__heading-title {
+    width: 100%;
+}
+
+.hire__heading-title h1 {
+    text-align: center;
+    margin: 3rem 1rem 0 1rem;
+    font-size: 7.5vw;
+}
+
+.heading__hire-description p {
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 4vw;
+}
+
+.heading__hire-image {
+    min-width: 60%;
+    display: none;
+}
+
+.heading__hire-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.apply {
+    font-family: var(--roboto-font);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+
+/**HubSpot Form Styles**/
+.form__container {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
+
+.embed {
+    width: 100%;
+}
+
+.hire__apply-image {
+    display: none;
+}
+
+/**HubSpot Form Styles**/
+/**End Hire Styles**/
+
+
+
+/*Find a Job Styles*/
+.heading__work-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading__work-text p {
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 2rem;
+}
+
+.heading__work-text h1 {
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 3rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.heading__work-image {
+    display: none;
+}
+
+.heading__work-image-mobile {
+    width: 95vw;
+    margin-top: 6rem;
+}
+
+.heading__work-image-mobile video {
+    width: 100%;
+    height: auto;
+}
+
+.btn__skills {
+    display: none;
+}
+
+.btn__skills-mobile {
+    font-size: 4vw;
+    width: 100%;
+    padding: .7rem 0;
+    margin-bottom: 3rem;
+    font-weight: lighter;
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 8vw;
+}
+
+.tecnologies {
+    display: grid;
+    grid-template-columns: repeat(8, 10%);
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 3rem;
+    overflow-x: scroll;
+}
+
+.tecnologies img {
+    width: 10vw;
+    height: 10vw;
+}
+
+.tecnologies div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15vw;
+    margin: .5rem 3rem;
+}
+
+.tecnologies div p {
+    text-align: center;
+    font-family: var(--roboto-font);
+    font-size: 3vw;
+}
+
+.skills .center__text {
+    display: none;
+}
+
+.container__carousel {
+
+    margin: 3rem auto;
+}
+
+.swipper {
+    margin-left: 1rem;
+}
+
+.swiper-slide-active {
+    margin-left: 1rem;
+}
+
+.swipe-button {
+    display: none;
+    font-size: 35px;
+    color: var(--secondary-text-color);
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.swiper-slide {
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    min-width: 70%;
+}
+
+.carousel__arrow {
+    color: var(--secondary-text-color);
+    font-size: 50px !important;
+    font-weight: bold;
+}
+
+.border {
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.border__bottom {
+    height: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hiring__card-title {
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.hiring__card-title .step__number {
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-text-color);
+    margin-top: 0;
+}
+
+.hiring__card-title .step__number span {
+    font-size: 20px;
+    color: white;
+}
+
+.hiring__card-name h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: var(--roboto-font);
+    font-weight: bold;
+    font-size: 3.5vw;
+}
+
+.hiring__card-name p {
+    font-family: var(--roboto-font);
+    font-style: italic;
+    padding: 0 !important;
+    font-size: 3.5vw;
+}
+
+.swiper-slide .px {
+    font-size: 3.5vw;
+}
+
+.hiring__card-more {
+    justify-content: space-between;
+    color: var(--secondary-text-color);
+    margin: 2rem 0;
+    padding: 0 1rem;
+
+}
+
+.hiring__card-more a {
+    justify-content: space-between;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-family: var(--roboto-font);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3.5vw;
+
+}
+
+/*End Find a Job Styles*/
+
+@media (min-width: 750px) {
+    .container__mobile {
+        margin: 7rem 3rem;
+    }
+
+    p {
+        font-size: 2.2vw !important;
+    }
+
+    .secondary__btn,
+    .primary__btn,
+    .btn__skills-mobile {
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+
+    .step__card {
+        min-width: 60vw;
+        max-width: 70vw !important;
+        margin-left: 1rem;
+    }
+
+    .step__card ul li {
+        font-size: 2vw !important;
+    }
+
+    .step__card h3 {
+        font-size: 4vw;
+    }
+
+    .step__number {
+        width: 2rem;
+        height: 2rem;
+        padding: .5rem;
+        box-sizing: content-box;
+    }
+
+    .step__number p {
+        margin: 0;
+        font-size: 2.5vw !important;
+    }
+
+    .next__button {
+        font-size: 2vw;
+    }
+
+    /**Work page**/
+    .skills h3 {
+        font-size: 5vw;
+    }
+
+    .swiper-slide {
+        min-width: 50vw !important;
+        max-width: 50vw !important;
+    }
+
+    .hiring__card-name h3 {
+        font-size: 2.5vw;
+    }
+
+    .hiring__card-more a {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    button {
+        font-size: 1.5vw;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    header {
+        min-width: 100vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 1.2vw !important;
+    }
+
+    .secondary__btn,
+    .primary__btn {
+        font-size: 1.2vw;
+        font-weight: 500;
+    }
+
+    .menu__icon {
+        display: block;
+    }
+
+    .nav__desktop .row {
+        display: none;
+    }
+
+    .nav__desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        margin: 0;
+        width: calc(100vw - 2rem);
+        height: 8vh;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .container__desktop {
+        padding: .5rem 1rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        row-gap: 0;
+        justify-content: space-between;
+        padding: 0 6rem;
+    }
+
+    /**HomePage Styles (LandScape Tablet)**/
+    .heading {
+        margin-top: 15vh !important;
+    }
+
+    .mobile__title {
+        display: none;
+    }
+
+    .heading__img {
+        min-width: 45%;
+        max-width: 50%;
+        margin: 0;
+    }
+
+    .heading__description h1 {
+        display: block;
+    }
+
+    .heading__description p {
+        width: 80%;
+        text-align: left;
+        font-size: 2vw;
+    }
+
+    .heading__description p span {
+        text-transform: uppercase;
+        color: var(--secondary-text-color);
+    }
+
+    .heading__description .hire {
+        flex-direction: row;
+        row-gap: 0;
+    }
+
+    .heading__description .work {
+        flex-direction: row;
+        row-gap: 0;
+    }
+
+    .heading__description .row p {
+        width: 45%;
+    }
+
+    .step__card {
+        max-width: 30%;
+        min-width: 30%;
+    }
+
+    .step__card h3 {
+        font-size: 4vh;
+        margin-left: 0;
+    }
+
+    .step__card p {
+        font-size: 1.5vw !important;
+        margin: 0;
+    }
+
+    .step__card ul li {
+        font-size: 1.5vw !important;
+        margin: 0;
+    }
+
+    .step__number {
+        width: 3.5vw !important;
+        height: 3.5vw !important;
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .step__number p {
+        margin: .5rem;
+        font-size: 20px !important;
+        align-self: center;
+    }
+
+    /**End HomePage Styles (LandScape Tablet)**/
+
+    /**Hire Styles (Landscape Tablet)**/
+    .heading {
+        flex-direction: row;
+    }
+
+    .hire__heading-title h1 {
+        text-align: left;
+        font-size: 3.5vw;
+        width: 45%;
+        margin-left: 50%;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .heading__hire-description p {
+        margin: 1rem 10px 1rem 1rem;
+        text-align: left;
+        font-size: 1.5vw;
+        line-height: 15pt;
+    }
+
+    .heading__hire-image {
+        display: block;
+    }
+
+
+
+    .form {
+        min-width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .embed {
+        width: 50%;
+    }
+
+    .hire__apply-image {
+        display: block !important;
+        width: 40%;
+    }
+
+    .hire__apply-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /**End Hire Styles (Landscape Tablet)**/
+
+    /**Find a Job Page (Landscape Tablet)**/
+    .container__mobile {
+        margin: 0;
+    }
+
+    .heading__work-text h1 {
+        text-align: right;
+        font-size: 3.5vw;
+        margin-left: 2rem;
+    }
+
+    .heading__work-text p {
+        text-align: right;
+        font-size: 1.2vw;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .heading__work {
+        display: flex;
+        margin-top: 20vh;
+    }
+
+    .heading__work-image-mobile {
+        display: none;
+    }
+
+    .heading__work-image {
+        margin-top: 25vh;
+        max-width: 47%;
+        display: block;
+        margin-left: 5rem;
+    }
+
+    .heading__work-image video {
+        width: 100%;
+        height: auto;
+    }
+
+    .heading__work-text {
+        width: 45%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills h3 {
+        text-align: left;
+        font-size: 35px;
+        margin: 4rem 0;
+    }
+
+    .skills .center__text {
+        margin-top: 4rem;
+        display: block;
+    }
+
+    .btn__skills-mobile {
+        display: none;
+    }
+
+    .btn__skills {
+        display: block;
+    }
+
+    .tecnologies {
+        row-gap: 2rem;
+        column-gap: 0rem;
+        overflow-x: hidden;
+    }
+
+    .tecnologies div {
+        justify-content: space-between;
+        margin: 0;
+        width: fit-content;
+    }
+
+    .tecnologies img {
+        height: 10vh;
+        width: 10vh;
+        padding: 0;
+    }
+
+    .tecnologies div p {
+        margin-top: 10px;
+        font-size: 1.7vw;
+    }
+
+
+    .container__carousel {
+        width: 90vw;
+    }
+
+    .swipper {
+        max-width: 80%;
+    }
+
+    .swipe-button {
+        display: block;
+    }
+
+    .swiper-slide {
+        max-width: 35% !important;
+        min-width: 35% !important;
+    }
+
+    .hiring__card-title {
+        margin: 2rem 0;
+        padding: 0 1rem;
+    }
+
+    .hiring__card-title .step__number {
+        font-size: 20px;
+    }
+
+    .hiring__card-name p {
+
+        font-size: 1.7vw;
+    }
+
+    .swiper-slide .px {
+        font-size: 1.7vw;
+    }
+
+
+    .hiring__card-title .step__number span {
+        font-size: 27px;
+    }
+
+    .hiring__card-name h3 {
+        font-size: 14px;
+    }
+
+    .hiring__card-more a {
+        font-size: 1.2vw;
+    }
+    /**End Find a Job Page (Landscape Tablet)**/
+
+}
+
+@media (min-width: 1281px) {
+
+    button {
+        font-size: 1.5vw;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    header {
+        min-width: 100vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    .menu__icon {
+        display: none;
+    }
+
+    .nav__desktop .row {
+        display: flex;
+    }
+
+    .nav__desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        margin: 0;
+        width: calc(100vw - 14rem);
+        height: 8vh;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .container__desktop {
+        padding: .5rem 7rem;
+    }
+
+    /**HomePage Styles (Desktop)**/
+    .heading {
+        margin-top: 15vh !important;
+    }
+
+    .mobile__title {
+        display: none;
+    }
+
+    .heading__img {
+        min-width: 45%;
+        max-width: 50%;
+        margin: 0;
+    }
+
+    .heading__description h1 {
+        display: block;
+    }
+
+    .heading__description p {
+        width: 80%;
+        text-align: left;
+        font-size: 1.3vw;
+    }
+
+    .heading__description p span {
+        text-transform: uppercase;
+        color: var(--secondary-text-color);
+    }
+
+    .heading__description .hire {
+        flex-direction: row;
+        row-gap: 0;
+    }
+
+    .heading__description .work {
+        flex-direction: row;
+        row-gap: 0;
+    }
+
+    .heading__description .row p {
+        width: 45%;
+    }
+
+    .steps {
+        overflow-x: hidden;
+    }
+
+    .step__card {
+        max-width: 30%;
+        min-width: 30%;
+    }
+
+    .step__card h3 {
+        font-size: 4vh;
+        margin-left: 0;
+    }
+
+    .step__card p {
+        font-size: 1vw !important;
+        margin: 0;
+    }
+
+    .step__card ul li {
+        font-size: 1vw !important;
+        margin: 0;
+    }
+
+    .step__number {
+        width: 12vw;
+        height: 12vw;
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .step__number p {
+        margin: .5rem;
+        font-size: 25px !important;
+        align-self: center;
+    }
+
+    /**End HomePage Styles (Desktop)**/
+
+    /**Hire Styles (Desktop)**/
+    .heading {
+        flex-direction: row;
+    }
+
+    .hire__heading-title h1 {
+        text-align: left;
+        font-size: 3.5vw;
+        width: 45%;
+        margin-left: 50%;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    .heading__hire-description p {
+        margin: 2rem 100px 2rem 1rem;
+        text-align: left;
+        font-size: 1.3vw;
+        line-height: 36pt;
+    }
+
+    .heading__hire-image {
+        display: block;
+    }
+
+    .hire__apply-mobile {
+        display: none;
+    }
+
+    .hire__apply {
+        display: flex;
+    }
+
+    .form__input p {
+        font-size: 1.2vw;
+    }
+
+    p.itallic.small_text {
+        font-size: 1.2vw;
+    }
+
+    /**End Hire Styles (Desktop)**/
+    /**Find a Job Styles(Desktop)**/
+    .container__mobile {
+        margin: 0;
+    }
+
+    .heading__work-text {
+        word-wrap: break-word;
+    }
+
+    .heading__work-text h1 {
+        text-align: right;
+        font-size: 3.5vw;
+        margin-left: 2rem;
+
+    }
+
+    .heading__work-text p {
+        text-align: right;
+        font-size: 1.3vw;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .heading__work {
+        display: flex;
+        margin-top: 20vh;
+    }
+
+    .heading__work-image-mobile {
+        display: none;
+    }
+
+    .heading__work-image {
+        margin-top: 25vh;
+        max-width: 47%;
+        display: block;
+        margin-left: 5rem;
+    }
+
+    .heading__work-image video {
+        width: 100%;
+        height: auto;
+    }
+
+    .heading__work-text {
+        width: 45%;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills h3 {
+        text-align: left;
+        font-size: 35px;
+        margin: 4rem 0;
+    }
+
+    .skills .center__text {
+        margin-top: 4rem;
+        display: block;
+    }
+
+    .btn__skills-mobile {
+        display: none;
+    }
+
+    .btn__skills {
+        display: block;
+    }
+
+    .tecnologies {
+        row-gap: 2rem;
+        column-gap: 0rem;
+        overflow-x: hidden;
+    }
+
+    .tecnologies div {
+        justify-content: space-between;
+        margin: 0;
+        width: fit-content;
+    }
+
+    .tecnologies img {
+        height: 10vh;
+        width: 10vh;
+        padding: 0;
+    }
+
+    .tecnologies div p {
+        margin-top: 10px;
+        font-size: 1.2vw;
+    }
+
+
+    .container__carousel {
+        width: 90vw;
+    }
+
+    .swipper {
+        max-width: 80%;
+    }
+
+    .swipe-button {
+        display: block;
+    }
+
+    .swiper-slide {
+        max-width: 30% !important;
+        min-width: 30% !important;
+    }
+
+    .hiring__card-title {
+        margin: 2rem 0;
+        padding: 0 1rem;
+    }
+
+    .hiring__card-title .step__number {
+        font-size: 20px;
+    }
+
+    .hiring__card-name p {
+
+        font-size: 1.2vw;
+    }
+
+    .swiper-slide .px {
+        font-size: 1.2vw;
+    }
+
+    .step__number {
+        width: 3.5vw !important;
+        height: 3.5vw !important;
+    }
+
+    .hiring__card-title .step__number span {
+        font-size: 20px;
+    }
+
+    .hiring__card-name h3 {
+        font-size: 17px;
+    }
+
+    .hiring__card-more a {
+        font-size: 1.2vw;
+    }
+
+    /**End Find a Job Styles(Desktop)**/
+}
+
+
+
+
+
+@media (min-width: 1680px) {
+    .container {
+        padding: 0 15rem;
+    }
+
+    .container-desktop {
+        padding: .5rem 500px !important;
+    }
+
+    .nav__desktop {
+        width: calc(100vw - 10rem);
+    }
+
+    /**HomePage Styles (Large Desktop)**/
+    .heading__img {
+        max-width: 40%;
+        min-width: 30%;
+    }
+
+    .heading__description h1 {
+        font-size: 5vw;
+        margin-right: 5rem;
+    }
+    /**End HomePage Styles (Large Desktop)**/
+
+    /**Find a Job Styles (Large Desktop)**/
+    .heading__work-text h1 {
+        font-size: 3vw;
+        margin-top: 4rem;
+    }
+
+    .heading__work-text p {
+        font-size: 1vw;
+    }
+
+    .heading__work-image {
+        margin-top: 15vh;
+        max-width: 40%;
+    }
+
+    .swiper-slide {
+        max-width: 25%;
+    }
+
+    .tecnologies div p {
+        font-size: 1vw;
+    }
+
+    .tecnologies img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .skills .center__text {
+        font-size: 1vw;
+    }
+
+    .btn__skills {
+        font-size: 1vw;
+    }
+
+    .hiring__card-name p {
+        font-size: 1vw;
+    }
+
+    .swiper-slide .px {
+        font-size: 1vw;
+    }
+
+    .hiring__card-more a {
+        font-size: .8vw;
+    }
+
+    /**End Find a Job Styles (Large Desktop)**/
+}

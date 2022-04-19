@@ -1,0 +1,194 @@
+#main{
+    display: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.skip-to-form{
+    display: none;
+}
+.container.loaded{
+    margin: 0!important;
+    padding: 0!important;
+}
+label{
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    margin: auto 0;
+    
+    
+}
+span{
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+#what_role_are_you_most_experienced_in_-label{
+    margin-bottom: .5rem;
+}
+select{
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+    border: 1px solid #777;
+    height: 30px;
+    width: 100px;
+    color: #777;
+    border-radius: 5px;
+    cursor: pointer;
+}
+select:focus{
+    border: 1.2px solid #777;
+}
+.hs-form__field{
+    margin: 1rem 0;
+    
+}
+
+
+.rowF{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin: 2.5rem 0;
+}
+.hs-form__field__phone{
+    width: 100%;
+}
+.rowF label{
+    white-space: nowrap;
+    width: max-content;
+    margin-right: 1rem;
+}
+
+input[type=string], input[type=email], input[type=tel], input[type=number]{
+    width: 100%;
+    background-color: #f4f2f2;
+    border: solid 1px #c4c4c4;
+    border-radius: 2px;
+    height: 28px;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+    
+}
+.custom-file-input{
+    margin-top: 1rem;
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    
+  }
+  .custom-file-input::before {
+    content: 'Upload CV';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-size: 1.2vw;
+    margin: 1rem 2px;
+    margin-right: 2rem;
+    padding: 15px 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+  .hs-form__actions__submit{
+    background-color: #f99604;
+    color: white;
+    align-self: center;
+    font-size: 1.2vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 10%;
+    height: 5vh;
+    float: right;
+  }
+.hs-form__pagination-content-container{
+    position: relative;
+
+    width: 55vw;
+    
+}
+  #Form1, #Form2, #Form3, #Form4{
+      
+      margin-bottom: 10rem;
+      background-color: white;
+      width: 90%;
+      
+      
+  }
+
+  #Form1{
+      display: block;
+  }
+
+  #Form2{
+    
+    display: none;
+    
+  }
+  #Form3{
+    
+    display: none;
+  }
+  #Form4{
+    
+    display: none;
+}
+
+#Form1Alert, #Form2Alert, #Form3Alert{
+    color: #ff6962;
+    font-size: 1.2vw;
+    display: none;
+}
+
+.nextButton{
+    height: 5vh;
+    line-height: 0;
+    font-weight: 500;
+    font-size: 1.2vw;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 2.5rem;
+    float: right;
+    border-radius: 0;
+    margin-top: 1rem;
+    margin-right: 0;
+}
+.hs-form__actions__submit{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 0;
+    line-height: 0;
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    float: right;
+}
+@media (min-width: 1680px) {
+    .nextButton{
+        height: 4vh;
+        padding: 1rem 2rem;
+        font-size: 1vw;
+    }
+}
+@media(min-width: 1024px){
+    #main{
+        display: flex;
+    }
+}
