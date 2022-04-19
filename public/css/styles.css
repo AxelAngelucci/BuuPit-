@@ -83,8 +83,11 @@ ul {
     min-width: 100vw;
     background-color: white;
     top: 5vh;
+    margin-top: .7rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-left: 1rem;
+    z-index: 2;
 }
 
 .menu a {
