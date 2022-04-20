@@ -1004,14 +1004,14 @@ footer {
         width: 45%;
         margin-left: 50%;
         margin-top: 5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0!important;
     }
 
     .heading__hire-description p {
         margin: 1rem 10px 1rem 1rem;
         text-align: left;
         font-size: 1.5vw;
-        line-height: 15pt;
+        line-height: 30pt;
     }
 
     .heading__hire-image {
@@ -1329,10 +1329,9 @@ footer {
     }
 
     .heading__hire-description p {
-        margin: 2rem 100px 2rem 1rem;
+        margin: 2rem 100px 3rem 1rem;
         text-align: left;
         font-size: 1.3vw;
-        line-height: 36pt;
     }
 
     .heading__hire-image {
@@ -1389,10 +1388,10 @@ footer {
     }
 
     .heading__work-image {
-        margin-top: 25vh;
-        max-width: 47%;
+        margin-top: 15vh;
+        max-width: 50%;
         display: block;
-        margin-left: 5rem;
+        margin-left: 2rem;
     }
 
     .heading__work-image video {
