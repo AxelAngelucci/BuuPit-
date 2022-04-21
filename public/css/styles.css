@@ -67,6 +67,9 @@ button {
 ul {
     padding: 0;
 }
+.margin{
+    margin-bottom: 3.9rem!important;
+}
 
 .container {
     margin: 0 2rem;
@@ -464,17 +467,19 @@ footer {
     align-items: center;
     row-gap: 3rem;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .redes{
+    
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     font-family: Roboto;
     list-style: none;
     color: white;
     font-size: 20px;
     padding-right: 13rem;
-    justify-content: center;
+    justify-content: space-between!important;
     width: max-content;
     padding: 0;
     
@@ -492,18 +497,23 @@ footer {
     color: white;
     font-size: 18px;
     padding: 0;
+    gap: 2rem;
     justify-content: center;
+
 }
 
 .enlaces li{
-    padding: 1rem 2rem;
-    width: max-content;
+    padding: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .enlaces li a{
     text-decoration: none;
     color: white;
     font-family: var(--main-font);
+    font-size: 4vw;
+    
 }
 .enlaces li a:hover{
     color: var(--secondary-text-color);
@@ -511,7 +521,7 @@ footer {
 
 .redes img{
     width: auto;
-    height: 40px;
+    height: 25px;
 }
 
 .legal{
@@ -522,8 +532,18 @@ footer {
 
 .logo__footer {
     color: white;
+    font-size: 5vw!important;
+    
 }
-
+#b p{
+    font-weight: bold;
+    font-size: 5vw!important;
+}
+#b{
+    width: 10vw;
+    height: 10vw;
+    margin: 1rem 0;
+}
 /**End HomePage Styles**/
 
 
@@ -836,7 +856,47 @@ footer {
     .next__button {
         font-size: 2vw;
     }
-
+    .footer{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        row-gap: 0;
+        justify-content: space-between;
+        padding: 0 6rem;
+    }
+    .enlaces li{
+        width: max-content;
+        text-align: center;
+    }
+    
+    .enlaces li a{
+        text-decoration: none;
+        color: white;
+        font-family: var(--main-font);
+        font-size: 2vw;
+    }
+    .redes{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .redes img{
+        height: 30px;
+    }
+    .logo__footer {
+        color: white;
+        font-size: 3vw!important;
+        
+    }
+    #b p{
+        font-weight: bold;
+        font-size: 2.5vw!important;
+        font-family: var(--main-font);
+    }
+    #b{
+        width: 3.5vw!important;
+        height: 3.5vw!important;
+        margin: 1rem 0;
+    }
     /**Work page**/
     .skills h3 {
         font-size: 5vw;
@@ -907,16 +967,36 @@ footer {
         padding: .5rem 1rem;
     }
     .footer{
-        display: flex;
-        flex-direction: row;
         align-items: flex-start;
-        row-gap: 0;
-        justify-content: space-between;
         padding: 0 6rem;
+    }
+    .enlaces li{
+        padding: 0 2rem;
+        width: max-content;
+    }
+    
+    .enlaces li a{
+        font-size: 1.5vw;
     }
     .redes{
         flex-direction: row;
         gap: 3rem;
+    }
+    .redes img{
+        width: auto;
+        height: 30px;
+    }
+    .logo__footer {
+        font-size: 2vw!important;
+        
+    }
+    #b p{
+        font-size: 2vw!important;
+    }
+    #b{
+        width: 3vw!important;
+        height: 3vw!important;
+        margin: 1rem 0;
     }
     /**HomePage Styles (LandScape Tablet)**/
     .heading {
@@ -1140,7 +1220,10 @@ footer {
         margin-top: 10px;
         font-size: 1.7vw;
     }
-
+    #sponsors img{
+        width: 6.5vw;
+        margin-top: 3rem;
+    }
 
     .container__carousel {
         width: 90vw;
@@ -1157,6 +1240,7 @@ footer {
     .swiper-slide {
         max-width: 35% !important;
         min-width: 35% !important;
+        ;
     }
 
     .hiring__card-title {
@@ -1366,12 +1450,13 @@ footer {
 
     .heading__work-text {
         word-wrap: break-word;
+        padding-right: 1px;
     }
 
     .heading__work-text h1 {
         text-align: right;
         font-size: 3.5vw;
-        margin-left: 2rem;
+        margin-left: 0;
 
     }
 

@@ -1,4 +1,4 @@
-const dir = '/public'
+const dir = '/'
 const hireButton = document.getElementById("hireButton");
 const workButton = document.getElementById("workButton");
 
@@ -8,5 +8,5 @@ function windowOpen(element, dir, adress, place){
         window.open(`${dir}${adress}`, `${place}`);
     }
 }
-windowOpen(hireButton, dir, '/hire.html#form-hire', '_self');
-windowOpen(workButton, dir, '/work.html#form-work', '_self');
+windowOpen(hireButton, dir, 'hire.html#form-hire', '_self');
+windowOpen(workButton, dir, 'work.html#form-work', '_self');
