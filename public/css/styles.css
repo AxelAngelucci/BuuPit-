@@ -808,6 +808,10 @@ footer {
     font-size: 3.5vw;
 
 }
+#sponsors img{
+    width: 15vw;
+    margin-top: 2rem;
+}
 
 /*End Find a Job Styles*/
 
