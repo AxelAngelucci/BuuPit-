@@ -194,6 +194,9 @@ ul {
 body {
     position: relative;
 }
+#form__work-title{
+    padding: 3.5rem 0 2rem 0;
+}
 
 .d__none {
     display: none;
@@ -678,6 +681,7 @@ footer {
     grid-template-columns: repeat(8, 10%);
     width: 100%;
     justify-content: space-between;
+    
     column-gap: 3rem;
     overflow-x: scroll;
 }
@@ -708,7 +712,7 @@ footer {
 
 .container__carousel {
 
-    margin: 3rem auto;
+    margin: 3rem auto 0rem auto;
 }
 
 .swipper {
@@ -789,7 +793,13 @@ footer {
 .swiper-slide .px {
     font-size: 3.5vw;
 }
-
+.swiper-slide .job-desc {
+    height: 250px;
+}
+.salary{
+    color: gray;
+    margin-top: 2px;
+}
 .hiring__card-more {
     justify-content: space-between;
     color: var(--secondary-text-color);
@@ -917,6 +927,10 @@ footer {
 
     .hiring__card-more a {
         font-size: 2vw;
+    }
+    .hiring__card-title .row{
+        max-height: 20%!important;
+        min-height: 20%!important;
     }
 }
 
@@ -1231,10 +1245,13 @@ footer {
 
     .container__carousel {
         width: 90vw;
+        max-height: 70%;
+        min-height: 70%;
     }
 
     .swipper {
         max-width: 80%;
+        
     }
 
     .swipe-button {
@@ -1244,9 +1261,13 @@ footer {
     .swiper-slide {
         max-width: 35% !important;
         min-width: 35% !important;
-        ;
+        min-height: 100%;
+        
     }
-
+    .swiper-slide .job-desc {
+        height: 250px;
+    }
+    
     .hiring__card-title {
         margin: 2rem 0;
         padding: 0 1rem;
