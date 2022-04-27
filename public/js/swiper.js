@@ -21,3 +21,22 @@ const swiper = new Swiper(".swiper", {
 
     }
 });
+
+const readMore = document.getElementById("readMore");
+const readMoreTarget = document.getElementById("readMoreTarget");
+const textBox = document.getElementById("textBox");
+
+const read = () => {
+    readMore.classList.replace("d-none", "d-block");
+}
+readMore.addEventListener("click", ()=>{
+    if(readMoreTarget.classList.contains("d-none")){
+        readMore.textContent = "Back";
+        textBox.classList.replace("job-desc", "job__desc-more");
+        readMoreTarget.classList.replace("d-none", "d-block");
+    }else{
+        readMore.textContent = "Read more";
+        textBox.classList.replace("job__desc-more", "job-desc");
+        readMoreTarget.classList.replace("d-block", "d-none");
+    }
+});

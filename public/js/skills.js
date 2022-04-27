@@ -1,4 +1,4 @@
-const skills = ['React.js', 'Node.js', 'Python', 'Angular', 'Swift', 'Android', 'Java', 'Ruby on Rails',
+const skills = ['React.js', 'Node.js', 'Python', 'Angular', 'Swift', 'Android', 'Java', 'Ruby',
                  'GoLang', 'Vue.js', 'Php', 'DevOps', 'Machine Learning', 'Data engineering', 'Scala', 'TypeScript'];
 const gallery = document.querySelector('.tecnologies');
 
