@@ -266,12 +266,12 @@ body {
 }
 
 .nav__desktop {
-    padding: 0 1rem;
+    padding: 0 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    width: calc(100vw - 2rem);
+    width: 100vw;
     height: 7vh;
     position: fixed;
     top: 0;
@@ -678,7 +678,7 @@ footer {
 
 .tecnologies {
     display: grid;
-    grid-template-columns: repeat(8, 10%);
+    grid-template-columns: repeat(10, 10%);
     width: 100%;
     justify-content: space-between;
     column-gap: 3rem;
@@ -834,9 +834,13 @@ footer {
 .d-none{
     display: none;
 }
+#sponsors{
+    grid-template-columns: repeat(16, 10%);
+}
 #sponsors img{
     width: 15vw;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /*End Find a Job Styles*/
@@ -1245,8 +1249,8 @@ footer {
     }
 
     .tecnologies img {
-        height: 10vh;
-        width: 10vh;
+        height: 8vh;
+        width: 8vh;
         padding: 0;
     }
 
@@ -1254,9 +1258,13 @@ footer {
         margin-top: 10px;
         font-size: 1.7vw;
     }
+    #sponsors{
+        grid-template-columns: repeat(8, 10%);
+    }
     #sponsors img{
         width: 6.5vw;
         margin-top: 3rem;
+        margin-bottom: 0;
     }
 
     .container__carousel {
@@ -1570,8 +1578,8 @@ footer {
     }
 
     .tecnologies img {
-        height: 10vh;
-        width: 10vh;
+        height: 8vh;
+        width: 8vh;
         padding: 0;
     }
 
