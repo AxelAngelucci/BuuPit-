@@ -712,125 +712,38 @@ footer {
     display: none;
 }
 
-.container__carousel {
-
-    margin: 3rem auto 0rem auto;
+.searches{
+    max-width: 100vw;
+    margin: 3rem 1rem -1rem 1rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
 }
-
-.swipper {
-    margin-left: 1rem;
-}
-
-.swiper-slide-active {
-    margin-left: 1rem;
-}
-
-.swipe-button {
-    display: none;
-    font-size: 35px;
-    color: var(--secondary-text-color);
-    margin: 0 1rem;
-    cursor: pointer;
-}
-
-.swiper-slide {
-    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.10);
-    -webkit-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.10);
-    border-radius: 10px;
-    min-width: 70%;
-}
-
-.carousel__arrow {
-    color: var(--secondary-text-color);
-    font-size: 50px !important;
-    font-weight: bold;
-}
-
-.border {
-    height: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.border__bottom {
-    height: 20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.hiring__card-title {
-    margin: 2rem 0;
-    padding: 0 1rem;
-}
-
-.hiring__card-title .step__number {
-    font-size: 20px;
-    align-items: center;
-    text-align: center;
-    color: var(--secondary-text-color);
-    margin-top: 0;
-}
-
-.hiring__card-title .step__number span {
-    font-size: 20px;
-    color: white;
-}
-
-.hiring__card-name h3 {
-    margin: 0;
+.searches div{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
     text-transform: uppercase;
-    font-family: var(--roboto-font);
-    font-weight: bold;
-    font-size: 3.5vw;
+    text-align: center;
+    color: #3a3a3a;
 }
-
-.hiring__card-name p {
-    font-family: var(--roboto-font);
-    font-style: italic;
-    padding: 0 !important;
-    font-size: 3.5vw;
-}
-
-.swiper-slide .px {
-    font-size: 3.5vw;
-}
-.swiper-slide .job-desc {
-    height: 250px;
-}
-
-.job__desc-more{
-    min-height: 500px;
-}
-#readMore{
-    color: gray;
+.searches div p{
+    transition: all .2s ease-in-out;
     cursor: pointer;
+    letter-spacing: 1.78px;
+    text-align: left;
+    color: #3a3a3a;
+    font-weight: 500;
+    font-size: 15px!important;
 }
-#readMore:hover{
-    color: var(--secondary-text-color2);
+.searches div p:hover{
+    transform: scale(1.05);
+    
 }
-.salary{
-    color: gray;
-    margin-top: 2px;
-}
-.hiring__card-more {
-    justify-content: space-between;
-    color: var(--secondary-text-color);
-    margin: 2rem 0;
-    padding: 0 1rem;
-
+.searches div:nth-child(even){
+    margin: 1rem 7vw;
 }
 
-.hiring__card-more a {
-    justify-content: space-between;
-    color: var(--secondary-text-color);
-    text-decoration: none;
-    font-family: var(--roboto-font);
-    font-style: italic;
-    font-weight: bold;
-    font-size: 3.5vw;
-
-}
 .d-none{
     display: none;
 }
@@ -1081,8 +994,8 @@ footer {
     }
 
     .step__card {
-        max-width: 30%;
-        min-width: 30%;
+        max-width: 30%!important;
+        min-width: 30%!important;
     }
 
     .step__card h3 {
@@ -1160,6 +1073,8 @@ footer {
     .hire__apply-image {
         display: block !important;
         width: 40%;
+        position: sticky;
+        top: 10vh;
     }
 
     .hire__apply-image img {
@@ -1266,62 +1181,7 @@ footer {
         margin-top: 3rem;
         margin-bottom: 0;
     }
-
-    .container__carousel {
-        width: 90vw;
-        max-height: 70%;
-        min-height: 70%;
-    }
-
-    .swipper {
-        max-width: 80%;
-        
-    }
-
-    .swipe-button {
-        display: block;
-    }
-
-    .swiper-slide {
-        max-width: 35% !important;
-        min-width: 35% !important;
-        min-height: 100%;
-        
-    }
-    .swiper-slide .job-desc {
-        height: 250px;
-    }
     
-    .hiring__card-title {
-        margin: 2rem 0;
-        padding: 0 1rem;
-    }
-
-    .hiring__card-title .step__number {
-        font-size: 20px;
-    }
-
-    .hiring__card-name p {
-
-        font-size: 1.7vw;
-    }
-
-    .swiper-slide .px {
-        font-size: 1.7vw;
-    }
-
-
-    .hiring__card-title .step__number span {
-        font-size: 27px;
-    }
-
-    .hiring__card-name h3 {
-        font-size: 14px;
-    }
-
-    .hiring__card-more a {
-        font-size: 1.2vw;
-    }
     /**End Find a Job Page (Landscape Tablet)**/
 
 }
@@ -1354,9 +1214,9 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 3rem;
+        padding: 1rem 0;
         margin: 0;
-        width: calc(100vw - 14rem);
+        width: calc(100vw - 16rem);
         height: 8vh;
         position: fixed;
         top: 0;
@@ -1365,7 +1225,7 @@ footer {
     }
 
     .container__desktop {
-        padding: .5rem 7rem;
+        padding: .5rem 8rem;
     }
 
     /**HomePage Styles (Desktop)**/
@@ -1588,7 +1448,22 @@ footer {
         font-size: 1.2vw;
     }
 
-
+    .searches{
+        width: 75vw;
+        overflow-y: hidden;
+        padding-bottom: 0;
+        margin: 2rem auto 0 auto;
+    }
+    .searches div{
+        display: flex;
+        gap: 0rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        justify-content: space-between;
+    }
+    .searches div:nth-child(even){
+        margin: 1.5rem 7vw;
+    }
     .container__carousel {
         width: 90vw;
     }
@@ -1691,7 +1566,13 @@ footer {
     .swiper-slide {
         max-width: 25%;
     }
-
+    .searches div:nth-child(even){
+        margin: 2.5rem 7vw;
+    }
+    .searches div p{
+        
+        font-size: 20px!important;
+    }
     .tecnologies div p {
         font-size: 1vw;
     }
